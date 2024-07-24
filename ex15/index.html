@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercicio</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <section>
         <div>
-            testando
+            <p>Ano de nascimento</p>
+            <input type="number" name="txtano" id="txtano">
+            <p>Sexo</p>
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
 
-        <div>
-            
+        <div id="res">
+            preencha os dado para ver o resultado!
         </div>
 
     </section>
